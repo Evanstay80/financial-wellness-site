@@ -65,15 +65,20 @@
 
   <section id="contact" class="container">
     <h2>Contact Us</h2>
-    <form id="contactForm">
-      <input type="text" name="name" placeholder="Your Name" required />
-      <input type="email" name="email" placeholder="Your Email" required />
-      <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
-      <button type="submit">Send Message</button>
-    </form>
+    <form action="https://formspree.io/f/xgvkwzla" method="POST">
+  <label for="name">Name:</label>
+  <input type="text" name="name" required>
+
+  <label for="email">Email:</label>
+  <input type="email" name="email" required>
+
+  <label for="message">Message:</label>
+  <textarea name="message" required></textarea>
+
+  <button type="submit">Send</button>
+</form>
     <div id="form-message"></div>
   </section>
-
   <footer>
     <div class="container">
       <p>&copy; 2025 Your Financial Agency. All rights reserved.</p>
